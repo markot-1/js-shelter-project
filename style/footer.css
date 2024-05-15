@@ -1,0 +1,130 @@
+footer {
+    min-height: 350px;
+    background: url("../img/noise_transparent@2x.png"),
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer-body {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 39px 40px 0 39px;
+    display: flex;
+}
+
+.footer-block-contacts {
+    display: flex;
+}
+
+.footer-img {
+    max-width: 300px;
+}
+
+.footer-container {
+    padding: 17px 135px 60px 0;
+}
+
+.footer-container-map {
+    padding: 17px 154px 60px 0;
+}
+
+.footer-heading {
+    color: #FFFFFF;
+    text-align: left;
+    letter-spacing: 0.06em;
+}
+
+.footer-contact {
+    padding-top: 42px;
+}
+
+.footer-location {
+    padding-top: 32px;
+}
+
+.footer-contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact-link>p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    padding-left: 20px;
+    transition: color .2s;
+}
+
+.footer-contact-link:hover>p {
+    color: #FDDCC4;
+}
+
+@media screen and (max-width: 1278px) {
+    .footer-body {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 30px 0 30px;
+    }
+
+    .footer-block-contacts {
+        margin: auto;
+        max-width: 850px;
+    }
+
+    .footer-container {
+        padding: 0px 25px 65px 34px;
+    }
+
+    .footer-container-map {
+        padding: 0 12px 65px 0;
+    }
+
+    .footer-heading {
+        max-width: 515px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .footer-body {
+        padding: 29px 4px 0 5px;
+    }
+    
+    .footer-block-contacts {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 7px 0px 0px;
+    }
+
+    .footer-container,
+    .footer-container-map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    .footer-container {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .footer-container-map {
+        padding: 0 0px 40px 0;
+    }
+
+    .footer-location {
+        padding-top: 39px;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-img {
+        max-width: 260px;
+    }
+
+    .contact-link-mobile {
+        min-width: 300px;
+    }
+}

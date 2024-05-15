@@ -1,0 +1,197 @@
+/* Общие стили для всех страниц */
+
+* {
+    box-sizing: border-box;
+    font-family: Georgia, Times, serif;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 35px;
+    line-height: 130%;
+    /* text-align: center; */
+    color: #545454;
+}
+
+@media screen and (max-width: 730px) {
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.primary-button {
+    background: #F1CDB3;
+    border: none;
+    padding: 16px 47px;
+    white-space: nowrap;
+    transition: background .3s;
+}
+
+.primary-button,
+.animal-card-button {
+    border-radius: 100px;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;
+    letter-spacing: 0.06em;
+}
+
+
+.primary-button:hover {
+    cursor: pointer;
+    background: #FDDCC4;
+    border: none;
+}
+
+.button-paginator,
+.button-paginator-left,
+.button-paginator-right,
+.button-paginator-target {
+    color: #292929;
+    border-radius: 100px;
+    transition: background .3s, border .1s;
+}
+
+.button-paginator,
+.button-paginator-left,
+.button-paginator-right {
+    border: 2px solid #F1CDB3;
+    background: none;
+}
+
+.button-paginator-target {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.button-paginator:hover,
+.button-paginator-left:hover,
+.button-paginator-right:hover {
+    border: 2px solid #FDDCC4;
+    background: #FDDCC4;
+    cursor: pointer;
+}
+
+.button-paginator-target:hover,
+.button-paginator:active,
+.button-paginator-left:active,
+.button-paginator-right:active {
+    border: 2px solid #F1CDB3;
+    background: #F1CDB3;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: all .4s;
+    position: relative;
+    z-index: 4;
+}
+
+.burger-menu>span {
+    height: 2px;
+    width: 30px;
+    margin-bottom: 8px;
+}
+
+.burger-menu:hover {
+    cursor: pointer;
+}
+
+.header.open .burger-menu {
+    transform: rotate(90deg);
+}
+
+@media screen and (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+/* Общие стили для блока pets с карточками животных  */
+
+.pets-background {
+    background-color: #F6F6F6;
+}
+
+.pets-body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.animal-card {
+    height: 435px;
+    width: 270px;
+    background: #FAFAFA;
+    display: grid;
+    justify-items: center;
+    border-radius: 9px;
+    transition: background .3s;
+}
+
+.animal-card:hover {
+    background: white;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.animal-card-img:hover,
+.animal-card-bottom-container:hover {
+    cursor: pointer;
+}
+
+.animal-card-img {
+    max-width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+    transition: background-color .3s;
+}
+
+.animal-card:hover>.animal-card-img {
+    background-color: #FAFAFA;
+}
+
+.animal-card-bottom-container {
+    width: 100%;
+}
+
+.card-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.animal-card-text {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #545454;
+    margin: 30px 0;
+    letter-spacing: 0.06em;
+}
+
+.animal-card-button {
+    background: #FAFAFA;
+    border: 2px solid #F1CDB3;
+    height: 52px;
+    width: 187px;
+    margin-bottom: 30px;
+    transition: background .3s, border .1s;
+}
+
+.animal-card:hover .animal-card-button {
+    cursor: pointer;
+    background: #FDDCC4;
+    border: none;
+}

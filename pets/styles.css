@@ -1,0 +1,171 @@
+.start-body {
+    max-width: 1280px;
+    margin: 30px auto 0;
+    padding: 0 40px 30px;
+}
+
+.body-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.pets-body {
+    padding: 80px 40px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo:hover>.logo-title {
+    color: #292929;
+}
+
+.logo:active>.logo-title {
+    color: #545454;
+}
+
+.logo-title {
+    color: #545454;
+}
+
+.logo-subtitle {
+    color: #292929;
+    transition: color .3s;
+}
+
+
+.pets-heading {
+    margin: 0 auto 60px;
+    max-width: 400px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.menu-link {
+    color: #545454;
+    transition: color .2s, border .2s;
+}
+
+.menu-link:hover {
+    color: #292929;
+    cursor: pointer;
+}
+
+.menu-link:active {
+    padding-bottom: 3px;
+    color: #545454;
+    ;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.inactive-menu-link {
+    cursor: default;
+    margin-left: 35px;
+    padding-bottom: 3px;
+    color: #292929;
+    border-bottom: 3px solid #F1CDB3;
+}
+
+
+
+.slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-row-gap: 30px;
+    grid-column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pets-button-container {
+    margin: 60px auto 0;
+    display: flex;
+}
+
+.pets-button-container>div {
+    padding: 0 10px;
+}
+
+.button-paginator-inactive,
+.button-paginator-target,
+.button-paginator {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+}
+
+.button-paginator-inactive {
+    border-radius: 100px;
+    border: 2px solid #CDCDCD;
+    background: none;
+    color: #CDCDCD;
+}
+
+@media screen and (max-width: 985px) {
+
+    .start-body {
+        padding: 0 30px 30px;
+    }
+
+    .pets-heading {
+        margin: 0 auto 29px;
+    }
+
+    .slider .animal-card-hidden-768 {
+        display: none;
+    }
+
+    .pets-button-container {
+        margin: 40px auto 0;
+    }
+
+    .pets-body {
+        padding: 80px 0 76px;
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+
+    .start-body {
+        padding: 0 20px 30px;
+    }
+
+    .menu {
+        background: white;
+    }
+
+    .burger-menu {
+        margin: 8px 2px 0 0;
+    }
+
+    .burger-menu>span {
+        background: #000000;
+    }
+
+    .pets-body {
+        padding: 42px 10px;
+    }
+
+    .pets-heading {
+        margin: 0 auto 41px;
+    }
+
+    .slider .animal-card-hidden-320 {
+        display: none;
+    }
+
+    /* Возможно letter-spacing нужно добавить во всех карточках */
+
+    .animal-card-text,
+    .animal-card-button {
+        letter-spacing: 0.06em;
+    }
+
+    .pets-button-container>div {
+        padding: 2px 4px 0px;
+    }
+
+    .footer-body {
+        padding: 30px 0px 0 3px;
+    }
+}
